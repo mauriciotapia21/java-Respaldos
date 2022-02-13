@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "6ada0a96-d929-490c-905a-ef8243520a4a",
+		"name": "XpertalMauricio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "US 0001",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/api/v1/hotels"
+			},
+			"response": []
+		},
+		{
+			"name": "US 0002",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "US 0003",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"Mauricio Tapia\",\r\n    \"booking\": {\r\n        \"dateFrom\": \"10/02/2022\",\r\n        \"dateTo\": \"22/02/2022\",\r\n        \"destination\": \"Puerto Iguazú\",\r\n        \"hotelCode\": \"CH-0003\",\r\n        \"peopleAmount\": 2,\r\n        \"roomType\": \"Triple\",\r\n        \"people\": [\r\n            {\r\n                \"dni\": \"313212232\",\r\n                \"name\": \"Pepito\",\r\n                \"lastname\": \"Gomez\",\r\n                \"birthDate\": \"15/07/2000\",\r\n                \"mail\": \"ienwelfmweomfwe\"\r\n            },\r\n            {\r\n                \"dni\": \"313212232\",\r\n                \"name\": \"Pepito\",\r\n                \"lastname\": \"Gomez\",\r\n                \"birthDate\": \"10/02/2001\",\r\n                \"mail\": \"ienwelfmweomfwe\"\r\n            }\r\n        ],\r\n        \"paymentMethod\": {\r\n            \"type\": \"CREDIT\",\r\n            \"number\": \"1234-3324-1234-1211\",\r\n            \"dues\": 3\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/api/v1/booking"
+			},
+			"response": []
+		},
+		{
+			"name": "US 0004",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:8080/api/v1/flights"
+			},
+			"response": []
+		},
+		{
+			"name": "US 0005",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/flights?dateFrom=10/02/2022&dateTo=14/02/2022&origin=Buenos Aires&destination=Puerto Iguazú",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"flights"
+					],
+					"query": [
+						{
+							"key": "dateFrom",
+							"value": "10/02/2022"
+						},
+						{
+							"key": "dateTo",
+							"value": "14/02/2022"
+						},
+						{
+							"key": "origin",
+							"value": "Buenos Aires"
+						},
+						{
+							"key": "destination",
+							"value": "Puerto Iguazú"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "US 0006",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"Mauricio tapia\",\r\n    \"flightReservation\": {\r\n        \"dateFrom\": \"10/02/2022\",\r\n        \"dateTo\": \"20/02/2022\",\r\n        \"origin\": \"Buenos Aires\",\r\n        \"destination\": \"Puerto Iguazú\",\r\n        \"flightNumber\": \"BAPI-1235\",\r\n        \"seats\": 2,\r\n        \"seatType\": \"Economy\",\r\n        \"people\": [\r\n            {\r\n                \"dni\": \"313212232\",\r\n                \"name\": \"Pepito\",\r\n                \"lastname\": \"Gomez\",\r\n                \"birthDate\": \"10/02/2022\",\r\n                \"mail\": \"ienwelfmweomfwe\"\r\n            },\r\n            {\r\n                \"dni\": \"313212232\",\r\n                \"name\": \"Pepito\",\r\n                \"lastname\": \"Gomez\",\r\n                \"birthDate\": \"10/02/2022\",\r\n                \"mail\": \"ienwelfmweomfwe\"\r\n            }\r\n        ],\r\n        \"paymentMethod\": {\r\n            \"type\": \"CREDITO\",\r\n            \"number\": \"1234-3324-1234-1211\",\r\n            \"dues\": 3\r\n        }\r\n    }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/api/v1/flight-reservation"
+			},
+			"response": []
+		}
+	]
+}

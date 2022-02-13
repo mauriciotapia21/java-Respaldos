@@ -1,0 +1,11 @@
+com.example.demo
+com.example.demo.controller
+com.example.demo.dto
+com.example.demo.dto.hotel
+com.example.demo.dto.vuelo
+com.example.demo.entity
+com.example.demo.exceptions
+com.example.demo.repository.Hotel
+com.example.demo.repository.Vuelo
+com.example.demo.service.Hotel
+com.example.demo.service.vuelo
